@@ -6,7 +6,7 @@ $logFile = Join-Path $env:TEMP -ChildPath "InstallNetFx47ScriptLog.txt"
 
 # Download NetFx47
 $setupFileSourceUri = "https://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe"
-$setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP47-KB3186497-Web.exe"
+$setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP47-KB3186497-x86-x64-AllOS-ENU.exe"
 
 "$(Get-Date): Start to download NetFx 4.7 to $setupFileLocalPath." | Out-File -FilePath $logFile -Append
 
