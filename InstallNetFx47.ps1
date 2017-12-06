@@ -5,8 +5,8 @@ Set-StrictMode -Version Latest
 $logFile = Join-Path $env:TEMP -ChildPath "InstallNetFx47ScriptLog.txt"
 
 # Download NetFx47
-$setupFileSourceUri = "https://download.microsoft.com/download/3/5/9/35980F81-60F4-4DE3-88FC-8F962B97253B/NDP461-KB3102438-Web.exe"
-$setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP461-KB3102438-Web.exe"
+$setupFileSourceUri = "https://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe"
+$setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP47-KB3186497-Web.exe"
 
 "$(Get-Date): Start to download NetFx 4.7 to $setupFileLocalPath." | Out-File -FilePath $logFile -Append
 
