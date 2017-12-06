@@ -4,9 +4,6 @@ Set-StrictMode -Version Latest
 
 $logFile = Join-Path $env:TEMP -ChildPath "InstallNetFx47ScriptLog.txt"
 
-# Check if NetFx461 or later version exists
-$netFxKey = Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full\\" -ErrorAction Ignore
-
 # Download NetFx47
 $setupFileSourceUri = "https://download.microsoft.com/download/3/5/9/35980F81-60F4-4DE3-88FC-8F962B97253B/NDP461-KB3102438-Web.exe"
 $setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP461-KB3102438-Web.exe"
